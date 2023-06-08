@@ -1,0 +1,11 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@elysiajs/eden": "^0.5.3",
+    "elysia": "0.5.17",
+    "inventory": "workspace:*",
+    "typescript": "^5.1.3"
+  }
+}

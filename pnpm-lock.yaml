@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@sinclair/typebox':
+        specifier: ^0.28.15
+        version: 0.28.15
     devDependencies:
       prettier:
         specifier: latest
@@ -19,10 +23,10 @@ importers:
     dependencies:
       '@elysiajs/eden':
         specifier: ^0.5.3
-        version: 0.5.3(@elysiajs/fn@0.5.2)(elysia@0.5.18)
+        version: 0.5.3(@elysiajs/fn@0.5.2)(@sinclair/typebox@0.28.15)(elysia@0.5.18)
       elysia:
         specifier: 0.5.18
-        version: 0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3)
+        version: 0.5.18(@elysiajs/fn@0.5.2)(@sinclair/typebox@0.28.15)(typescript@5.1.3)
       inventory:
         specifier: workspace:*
         version: link:../../packages/inventory
@@ -62,7 +66,7 @@ importers:
         version: 4.15.0(prisma@4.15.0)
       elysia:
         specifier: ^0.5.18
-        version: 0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3)
+        version: 0.5.18(@elysiajs/fn@0.5.2)(@sinclair/typebox@0.28.15)(typescript@5.1.3)
     devDependencies:
       bun-types:
         specifier: ^0.6.8
@@ -114,7 +118,7 @@ packages:
       regenerator-runtime: 0.13.11
     dev: false
 
-  /@elysiajs/eden@0.5.3(@elysiajs/fn@0.5.2)(elysia@0.5.18):
+  /@elysiajs/eden@0.5.3(@elysiajs/fn@0.5.2)(@sinclair/typebox@0.28.15)(elysia@0.5.18):
     resolution: {integrity: sha512-cAujqLI4yTGlLVwpxZ57V2ntqAZPYmeaFpiV4nMQimJNpkFggmetb2kuExJlYk5W/67VVaOyXOGqZOnk7CjB8A==}
     peerDependencies:
       '@elysiajs/fn': '>= 0.5.0'
@@ -125,7 +129,8 @@ packages:
         optional: true
     dependencies:
       '@elysiajs/fn': 0.5.2(elysia@0.5.18)
-      elysia: 0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3)
+      '@sinclair/typebox': 0.28.15
+      elysia: 0.5.18(@elysiajs/fn@0.5.2)(@sinclair/typebox@0.28.15)(typescript@5.1.3)
       superjson: 1.12.3
     dev: false
 
@@ -138,7 +143,7 @@ packages:
       superjson:
         optional: true
     dependencies:
-      elysia: 0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3)
+      elysia: 0.5.18(@elysiajs/fn@0.5.2)(@sinclair/typebox@0.28.15)(typescript@5.1.3)
     dev: false
 
   /@eslint/eslintrc@0.4.3:
@@ -224,6 +229,10 @@ packages:
 
   /@rushstack/eslint-patch@1.2.0:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
+    dev: false
+
+  /@sinclair/typebox@0.28.15:
+    resolution: {integrity: sha512-IUHNXCbehBRC1yC1PVtzOHuDaqb30NnCquY3T8VFChu8Jy+wwl1l/XJ0VhC/EEUPi9MBQ8KTeWGT/KmbhztU4g==}
     dev: false
 
   /@types/json5@0.0.29:
@@ -598,7 +607,7 @@ packages:
       esutils: 2.0.3
     dev: false
 
-  /elysia@0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3):
+  /elysia@0.5.18(@elysiajs/fn@0.5.2)(@sinclair/typebox@0.28.15)(typescript@5.1.3):
     resolution: {integrity: sha512-4quCoxNR20sWdH4EN6dsFgZeLNbfSL44ETLM0kpll+6wxRtCfEngU2JVBOvC3bhVtaxGFIFJThonDJ2H7VC4jA==}
     peerDependencies:
       '@elysiajs/fn': '*'
@@ -616,6 +625,7 @@ packages:
         optional: true
     dependencies:
       '@elysiajs/fn': 0.5.2(elysia@0.5.18)
+      '@sinclair/typebox': 0.28.15
       '@types/lodash.clonedeep': 4.5.7
       fast-querystring: 1.1.1
       lodash.clonedeep: 4.5.0

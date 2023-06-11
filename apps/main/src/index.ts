@@ -5,4 +5,4 @@ import type { Inventory } from 'inventory'
 const eden = edenTreaty<Inventory>('https://cafe.gehenna.sh')
 
 // ? It's wise to start from index
-eden
+eden.index.get()

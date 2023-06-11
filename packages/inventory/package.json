@@ -5,12 +5,12 @@
   "module": "./src/index.ts",
   "scripts": {},
   "dependencies": {
-    "@elysiajs/fn": "^0.5.0",
+    "@elysiajs/fn": "^0.5.2",
     "@prisma/client": "^4.15.0",
-    "elysia": "^0.5.17"
+    "elysia": "^0.5.18"
   },
   "devDependencies": {
-    "bun-types": "^0.5.7",
+    "bun-types": "^0.6.8",
     "prisma": "^4.15.0"
   }
 }

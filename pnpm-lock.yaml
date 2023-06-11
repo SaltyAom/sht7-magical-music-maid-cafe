@@ -12,17 +12,17 @@ importers:
         specifier: latest
         version: 2.8.8
       turbo:
-        specifier: latest
+        specifier: ^1.10.2
         version: 1.10.2
 
   apps/main:
     dependencies:
       '@elysiajs/eden':
         specifier: ^0.5.3
-        version: 0.5.3(@elysiajs/fn@0.5.0)(elysia@0.5.17)
+        version: 0.5.3(@elysiajs/fn@0.5.2)(elysia@0.5.18)
       elysia:
-        specifier: 0.5.17
-        version: 0.5.17(@elysiajs/fn@0.5.0)(typescript@5.1.3)
+        specifier: 0.5.18
+        version: 0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3)
       inventory:
         specifier: workspace:*
         version: link:../../packages/inventory
@@ -55,18 +55,18 @@ importers:
   packages/inventory:
     dependencies:
       '@elysiajs/fn':
-        specifier: ^0.5.0
-        version: 0.5.0(elysia@0.5.17)
+        specifier: ^0.5.2
+        version: 0.5.2(elysia@0.5.18)
       '@prisma/client':
         specifier: ^4.15.0
         version: 4.15.0(prisma@4.15.0)
       elysia:
-        specifier: ^0.5.17
-        version: 0.5.17(@elysiajs/fn@0.5.0)(typescript@5.1.3)
+        specifier: ^0.5.18
+        version: 0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3)
     devDependencies:
       bun-types:
-        specifier: ^0.5.7
-        version: 0.5.8
+        specifier: ^0.6.8
+        version: 0.6.8
       prisma:
         specifier: ^4.15.0
         version: 4.15.0
@@ -114,7 +114,7 @@ packages:
       regenerator-runtime: 0.13.11
     dev: false
 
-  /@elysiajs/eden@0.5.3(@elysiajs/fn@0.5.0)(elysia@0.5.17):
+  /@elysiajs/eden@0.5.3(@elysiajs/fn@0.5.2)(elysia@0.5.18):
     resolution: {integrity: sha512-cAujqLI4yTGlLVwpxZ57V2ntqAZPYmeaFpiV4nMQimJNpkFggmetb2kuExJlYk5W/67VVaOyXOGqZOnk7CjB8A==}
     peerDependencies:
       '@elysiajs/fn': '>= 0.5.0'
@@ -124,13 +124,13 @@ packages:
       '@sinclair/typebox':
         optional: true
     dependencies:
-      '@elysiajs/fn': 0.5.0(elysia@0.5.17)
-      elysia: 0.5.17(@elysiajs/fn@0.5.0)(typescript@5.1.3)
+      '@elysiajs/fn': 0.5.2(elysia@0.5.18)
+      elysia: 0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3)
       superjson: 1.12.3
     dev: false
 
-  /@elysiajs/fn@0.5.0(elysia@0.5.17):
-    resolution: {integrity: sha512-3H0xBL8o3s/MSaK4MhObU6Pk7Qn6fsVXmDAW1f7m5yLNa/3yMCWBbF9F8JMp1XKUcGkax/I1O0q0JE476AjJ/Q==}
+  /@elysiajs/fn@0.5.2(elysia@0.5.18):
+    resolution: {integrity: sha512-LG7Tbl9z0lZYANf1ku4x5BCXn4UDGk6cgRQuzir/uBRyFxHB6UadA8sJKVcE4+CjDsm82wjcKLlw+JRgVIT4HQ==}
     peerDependencies:
       elysia: '>= 0.5.0'
       superjson: '>= 1.12.0'
@@ -138,7 +138,7 @@ packages:
       superjson:
         optional: true
     dependencies:
-      elysia: 0.5.17(@elysiajs/fn@0.5.0)(typescript@5.1.3)
+      elysia: 0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3)
     dev: false
 
   /@eslint/eslintrc@0.4.3:
@@ -448,8 +448,8 @@ packages:
     resolution: {integrity: sha512-cn9ApQi1nppfTzrpqRCVIkkSyrRmV/RUik9c4FBY0Fet9Jnl4ANcDW/z9m/pM/glC7b9e3WChEtAmo9etHpTbQ==}
     dev: false
 
-  /bun-types@0.5.8:
-    resolution: {integrity: sha512-VHwD0MAHo3wraYAeqTWH2NDmXOdGfC3wWWOnZvK93ytI6yq/LkgsCjDudWNmN7MlfPvJb2zoLMnkzhjxNwLsLw==}
+  /bun-types@0.6.8:
+    resolution: {integrity: sha512-wo9pXffnYJQyYYLnyFk0wUbEtSIIChdJoqTPN1swubhUybW92T3le8rWLCjQCFry3fKDXvhHF3aDU+qE+G9c6A==}
     dev: true
 
   /call-bind@1.0.2:
@@ -598,8 +598,8 @@ packages:
       esutils: 2.0.3
     dev: false
 
-  /elysia@0.5.17(@elysiajs/fn@0.5.0)(typescript@5.1.3):
-    resolution: {integrity: sha512-Y7K8sF4DSLToCQpAFixGpw/WDAPh+FDEgiciEHQeEfh98Bcny2fsx/6A7NxUCQw67NtbUxaZKsdGXEVz7jk8ng==}
+  /elysia@0.5.18(@elysiajs/fn@0.5.2)(typescript@5.1.3):
+    resolution: {integrity: sha512-4quCoxNR20sWdH4EN6dsFgZeLNbfSL44ETLM0kpll+6wxRtCfEngU2JVBOvC3bhVtaxGFIFJThonDJ2H7VC4jA==}
     peerDependencies:
       '@elysiajs/fn': '*'
       '@sinclair/typebox': '>= 0.28.10'
@@ -615,7 +615,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@elysiajs/fn': 0.5.0(elysia@0.5.17)
+      '@elysiajs/fn': 0.5.2(elysia@0.5.18)
       '@types/lodash.clonedeep': 4.5.7
       fast-querystring: 1.1.1
       lodash.clonedeep: 4.5.0

@@ -4,7 +4,7 @@
   "description": "",
   "dependencies": {
     "@elysiajs/eden": "^0.5.3",
-    "elysia": "0.5.17",
+    "elysia": "0.5.18",
     "inventory": "workspace:*",
     "typescript": "^5.1.3"
   }
